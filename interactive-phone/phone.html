@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive phone</title>
+
+    <link rel="stylesheet" href="phone.css">
+    <script src="phone.js" defer></script>
 </head>
+
 <body>
 
-    <div style="background-color: aqua; width: 100px; height: 100px;"></div>
-    
+    <!---Each app is just a div that's either visible or hidden depending 
+    on current app status-->
+
+
+    <div id="ao3-viewport"> <!--ao3 embedded viewport ig-->
+
+        <div class="phonescreen" id="homescreen"></div>
+       
+       <!-- <div class="phonescreen" id="instagram"></div>
+        <div class="phonescreen" id="gallery"></div>
+        <div class="phonescreen" id="phone"></div> -->
+
+
+    </div>
 </body>
+
+
 </html>

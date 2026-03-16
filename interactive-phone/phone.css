@@ -1,0 +1,11 @@
+#ao3-viewport{
+    background-color: aqua;
+    width: 400px;
+    height: 700px;
+}
+
+.phonescreen{
+    border: solid 3px black;
+    width: 50px;
+    height: 100px;
+}
