@@ -1,11 +1,74 @@
-#ao3-viewport{
-    background-color: aqua;
-    width: 400px;
+#ao3-viewport {
+    background-color: rgb(0, 251, 21);
+    width: 380px;
     height: 700px;
 }
 
-.phonescreen{
-    border: solid 3px black;
-    width: 50px;
-    height: 100px;
+#phonecase {
+    width: 380px;
+    height: 700px;
+    /*border: solid 2px rgb(217, 217, 217);*/
+    border-radius: 60px;
+    background-color: rgb(237, 237, 237);
+
+    box-shadow: inset 0px 0 10px rgb(143, 143, 143);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*x-achse*/
+    align-items: center;
+    /*y-achse*/
+}
+
+#front-camera {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(29, 29, 29);
+    margin-bottom: 10px;
+    margin-top: 13px;
+}
+#homebutton{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(176, 176, 176);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: inset 0px 0 3px rgb(69, 69, 69);
+}
+
+.phonescreen {
+    width: 310px;
+    height: 625px;
+    border-radius: 50px;
+    box-shadow: inset 0px 0 10px rgb(69, 69, 69);
+}
+
+#homescreen {
+    background-image: linear-gradient(to bottom, rgb(8, 8, 255, 0.6), rgb(85, 85, 255), rgb(188, 188, 255), rgb(255, 255, 255, 0.8), rgb(255, 190, 190), rgb(251, 122, 122), rgb(255, 83, 83), rgb(255, 0, 0, 0.8));
+    /*border: solid 2px rgb(143, 143, 143);*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#apps {
+    display: grid;
+    grid-template-columns: repeat(4, 55px);
+    gap: 15px;
+    justify-items: center;
+    height: 600px;
+    width: 260px;
+    /* 4 icons × 55px + gaps */
+    justify-content: center;
+    align-items: center;
+}
+
+.app-icons {
+    width: 55px;
+    height: 55px;
+    border-radius: 7px;
 }
