@@ -1,13 +1,14 @@
 #ao3-viewport {
-    background-color: rgb(0, 251, 21);
+    /*background-color: rgb(0, 251, 21);*/
     width: 380px;
     height: 700px;
 }
 
+/*-------------------------PHONE SHELL-------------------------*/
 #phonecase {
+    position: relative;
     width: 380px;
     height: 700px;
-    /*border: solid 2px rgb(217, 217, 217);*/
     border-radius: 60px;
     background-color: rgb(237, 237, 237);
 
@@ -16,9 +17,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*x-achse*/
     align-items: center;
-    /*y-achse*/
 }
 
 #front-camera {
@@ -26,26 +25,43 @@
     height: 10px;
     border-radius: 50%;
     background: rgb(29, 29, 29);
-    margin-bottom: 10px;
-    margin-top: 13px;
+    /*align-self: flex-start;*/
+    bottom: 313px;
+
+    position: relative;
+    z-index: 1;
 }
-#homebutton{
+
+#homebutton {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     background: rgb(176, 176, 176);
-    margin-bottom: 10px;
-    margin-top: 10px;
     box-shadow: inset 0px 0 3px rgb(69, 69, 69);
+    /*align-self: flex-end;*/
+    top: 325px;
+
+    position: relative;
+    z-index: 1;
 }
 
+#homebutton:hover {
+    cursor: grab;
+}
+
+/*-----------------FOR EVERYTHING THAT COVERS THE WHOLE DISPLAY-----------------*/
 .phonescreen {
     width: 310px;
     height: 625px;
     border-radius: 50px;
     box-shadow: inset 0px 0 10px rgb(69, 69, 69);
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
 }
 
+/*-----------------------HOMESCREEN-----------------------*/
 #homescreen {
     background-image: linear-gradient(to bottom, rgb(8, 8, 255, 0.6), rgb(85, 85, 255), rgb(188, 188, 255), rgb(255, 255, 255, 0.8), rgb(255, 190, 190), rgb(251, 122, 122), rgb(255, 83, 83), rgb(255, 0, 0, 0.8));
     /*border: solid 2px rgb(143, 143, 143);*/
@@ -71,4 +87,87 @@
     width: 55px;
     height: 55px;
     border-radius: 7px;
+}
+
+.app-icons:hover {
+    cursor: grab;
+    box-shadow: 0px 0 6px rgb(69, 69, 69, 0.5);
+}
+
+
+/*--------------------GOOGLE----------------------*/
+
+#google {
+    display: none;
+    background-color: white;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#google-header {
+    background-color: rgb(229, 229, 229);
+    width: 310px;
+    height: 80px;
+    border-radius: 50px 50px 0px 0px;
+    box-shadow: inset 0px 0 10px rgb(143, 143, 143);
+
+    clip-path: inset(0px -10px 20px -10px);
+}
+
+#header-searchbar {
+    background-color: rgb(205, 205, 205);
+    border-radius: 40px;
+    width: 150px;
+    height: 30px;
+    line-height: 27px;
+    margin-left: 25px;
+    margin-top: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 160px;
+    padding: 0 10px;
+}
+
+#header-searchbar p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(126, 126, 126);
+    margin: 0;
+}
+
+#menu-icon {
+    width: 15px;
+    height: 15px;
+}
+
+#menu-icon:hover{
+    cursor: grab;
+}
+
+#google-logo {
+    width: 150px;
+    height: auto;
+    margin-top: 120px;
+
+}
+
+#searchbar {
+    width: 270px;
+    height: 35px;
+    border: solid 1px rgb(205, 205, 205);
+    border-radius: 40px;
+    margin-top: 17px;
+}
+
+/*--------------------GOOGLE MENU----------------------*/
+
+#googleMenuPopup{
+    display: none;
+    background-color:rgb(229, 229, 229);
+    width: 200px;
+    height: 200px;
 }
