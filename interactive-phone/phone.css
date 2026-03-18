@@ -105,7 +105,7 @@
     justify-content: flex-start;
     align-items: center;
 
-    
+
 }
 
 #google-header {
@@ -146,7 +146,7 @@
     height: 15px;
 }
 
-#menu-icon:hover{
+#menu-icon:hover {
     cursor: grab;
 }
 
@@ -165,11 +165,11 @@
     margin-top: 17px;
 }
 
-/*--------------------GOOGLE MENU----------------------*/
+/*--------------------GOOGLE MENU POPUP----------------------*/
 
-#googleMenuPopup{
+#googleMenuPopup {
     display: none;
-    background-color:rgb(229, 229, 229);
+    background-color: rgb(229, 229, 229);
     width: 150px;
     height: 40px;
     border-radius: 20px;
@@ -184,23 +184,118 @@
     right: 20px;
 }
 
-#googleMenuPopup:hover{
+#googleMenuPopup:hover {
     cursor: grab;
 }
 
-#history-icon{
+#history-icon {
     width: 20px;
     height: 20px;
 
     margin-top: 10px;
-    margin-left: 10px;  
+    margin-left: 10px;
 }
 
 
-#googleMenuPopup p{
+#googleMenuPopup p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     color: rgb(0, 0, 0);
 
     margin-top: 10px;
+}
+
+
+
+/*--------------------GOOGLE HISTORY----------------------*/
+
+#google-history {
+    background-color: white;
+    display: none;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#history-header {
+    width: 310px;
+    height: 65px;
+    border-radius: 50px 50px 0px 0px;
+    box-shadow: inset 0px 0 2px rgb(143, 143, 143);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+
+#exit-x:hover{
+    cursor: grab;
+}
+
+#history-header p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(37, 37, 37);
+    margin: 0;
+
+    margin-top: 10px;
+}
+
+#history-header img {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#history-content{
+    /*background-color: aqua;*/
+    width: 310px;
+    height: 533px; 
+    overflow-y: scroll;
+}
+
+.search{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-img img{
+    width: 13px;
+    height:13px;
+    padding: 10px;
+    background-color: rgb(246, 245, 245) ;
+    border-radius: 50%;
+    margin-top: 11px;
+    margin-left: 11px;
+
+}
+
+.search-content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: rgb(37, 37, 37);
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.website-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: rgb(37, 37, 37);
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.history-date{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: rgb(55, 55, 55);
+    margin-left: 20px;
+    margin-top: 7px;
+    
 }
