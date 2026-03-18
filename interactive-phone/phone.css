@@ -104,6 +104,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    
 }
 
 #google-header {
@@ -169,16 +171,36 @@
     display: none;
     background-color:rgb(229, 229, 229);
     width: 150px;
-    height: 200px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba(99, 99, 99, 0.8);
 
-    
-    align-items: center;
-    justify-content: space-between;
+    line-height: 19px;
+    align-items: flex-start;
+    gap: 20px;
 
+    position: absolute;
+    top: 53px;
+    right: 20px;
+}
+
+#googleMenuPopup:hover{
+    cursor: grab;
 }
 
 #history-icon{
     width: 20px;
     height: 20px;
-    
+
+    margin-top: 10px;
+    margin-left: 10px;  
+}
+
+
+#googleMenuPopup p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+
+    margin-top: 10px;
 }

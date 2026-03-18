@@ -22,5 +22,10 @@ function activeGoogle() {
 }
 
 function ActivegoogleMenuPopup() {
-  document.getElementById("googleMenuPopup").style.display = "flex";
+  let popup = document.getElementById("googleMenuPopup");
+  if (popup.style.display === "flex") {
+    popup.style.display = "none";
+  } else {
+    popup.style.display = "flex";
+  }
 }
