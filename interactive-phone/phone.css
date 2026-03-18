@@ -296,6 +296,156 @@
     font-size: 11px;
     color: rgb(55, 55, 55);
     margin-left: 20px;
-    margin-top: 7px;
-    
+    margin-top: 7px;    
 }
+
+/*--------------------GMAIL----------------------*/
+
+#gmail{
+    background-color: rgb(242, 242, 242);
+    display: none;
+
+    flex-direction: column;
+}
+
+
+#gmail-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+#email-searchbar{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#google-profile-pic{
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+#inbox{
+    margin: 15px;
+}
+
+#inbox p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(37, 37, 37);
+}
+
+#inbox-description{
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+.email{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.email:hover{
+    cursor: grab;
+}
+
+.email-profile-pic{
+    width: 40px;
+    height: 40px;
+    align-self: flex-start;
+}
+
+.email-overview-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sender{
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.about{
+    font-size: 11px;
+    margin-top: 6px;
+    margin-bottom: 2px;
+}
+
+.email-text{
+    font-size: 11px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+
+.email-overview-info{
+
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.time{
+    font-size: 9px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.starred{
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+}
+
+#write-email{
+    background-color: rgb(173, 222, 250);
+    width: 100px;
+    height: 45px;
+    border-radius: 14px;
+    box-shadow: 0px 3px 8px rgba(99, 99, 99, 0.4);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    align-self: flex-end;
+    margin-right: 25px;
+    margin-top: 160px;
+}
+
+#write-email:hover{
+    cursor: grab;
+}
+
+#pen-icon{
+    width: 15px;
+    height: 15px;
+
+    margin-left: 16px;
+}
+
+#write-text{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(37, 37, 37);
+    font-size: 14px;
+}
+
+
+

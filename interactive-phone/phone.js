@@ -3,7 +3,7 @@ element.style.display = "block";   // zeigt als block (div-standard)
 element.style.display = "flex";    // zeigt als flexbox
 element.style.display = "grid";    // zeigt als grid
 */
-const screens = ["homescreen", "google", "google-history"];
+const screens = ["homescreen", "google", "google-history", "gmail"];
 
 function showScreen(id) {
   screens.forEach(function(s) {
@@ -33,4 +33,8 @@ function activegoogleMenuPopup() {
 
 function activeGoogleHistory(){
     showScreen("google-history")
+}
+
+function activeGmail(){
+    showScreen("gmail")
 }
