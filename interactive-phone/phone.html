@@ -1267,13 +1267,41 @@
                         </div>
                     </div>
                 </div>
-                <div id="write-email">
+                <div id="write-email" onclick="activeWriteEmail()">
                     <img id="pen-icon" src="https://www.shareicon.net/download/2015/12/07/683932_write_512x512.png"
                         alt="pen-icon">
-                    <p id="write-text">Write</p>
+                    <p id="write-text">Compose</p>
                 </div>
+            </div>
 
+            <div class="phonescreen" id="write-gmail">
+                
+                <div id="sending-information">
+                    <div id="gmail-buttons">
+                        <img id="back-arrow" onclick="activeGmail()" src="https://images.icon-icons.com/3514/PNG/512/arrow_left_back_icon_221067.png" 
+                        alt="back">
+                        <img id="send-button" onclick="activeGmail(); clearEmailInput()" src="https://cdn-icons-png.flaticon.com/512/876/876777.png" alt="send">
+                    </div>
 
+                    <div id="absender">
+                    <p class="description-text">From</p>
+                    <p id="gmail-adress">shanehollander@gmail.com</p>
+                    </div>
+
+                    <div id="empfänger">
+                    <p class="description-text">To</p>
+                    <input id="empfänger-textfeld" type="text">
+                    </div>
+
+                    <div id="reference">
+                    <input id="input-reference" type="text" placeholder="Reference" autocomplete="off">
+                    </div>
+
+                    <div id="tekstfeld">
+                        <textarea id="gmail-tekstfeld" placeholder="Write here..."></textarea>
+                    </div>
+                </div>
+                
             </div>
 
 

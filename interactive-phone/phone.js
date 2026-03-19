@@ -3,7 +3,7 @@ element.style.display = "block";   // zeigt als block (div-standard)
 element.style.display = "flex";    // zeigt als flexbox
 element.style.display = "grid";    // zeigt als grid
 */
-const screens = ["homescreen", "google", "google-history", "gmail"];
+const screens = ["homescreen", "google", "google-history", "gmail", "write-gmail"];
 
 function showScreen(id) {
   screens.forEach(function(s) {
@@ -32,9 +32,24 @@ function activegoogleMenuPopup() {
 }
 
 function activeGoogleHistory(){
-    showScreen("google-history")
+    showScreen("google-history");
 }
 
 function activeGmail(){
-    showScreen("gmail")
+    showScreen("gmail");
+}
+
+function activeWriteEmail(){
+  showScreen("write-gmail");
+  console.log("write the fucking email")
+}
+
+function clearEmailInput(){
+  input = document.getElementById("gmail-tekstfeld");
+  empfänger = document.getElementById("empfänger-textfeld");
+  reference = document.getElementById("input-reference"); 
+  
+  input.value = "";
+  empfänger.value = "";
+  reference.value = "";
 }

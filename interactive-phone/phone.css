@@ -415,7 +415,7 @@
 
 #write-email{
     background-color: rgb(173, 222, 250);
-    width: 100px;
+    width: 120px;
     height: 45px;
     border-radius: 14px;
     box-shadow: 0px 3px 8px rgba(99, 99, 99, 0.4);
@@ -448,4 +448,113 @@
 }
 
 
+/*--------------------WRITE GMAIL----------------------*/
+
+#write-gmail{
+    background-color: rgb(255, 255, 255);
+
+    /*display: none;*/
+}
+
+#write-gmail p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#sending-information{
+     margin: 17px;
+     margin-top: 25px;
+}
+
+#gmail-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 230px;
+    margin-bottom: 30px;
+}
+
+#gmail-buttons img:hover{
+    cursor: grab;
+}
+
+#back-arrow{
+    width: 20px;
+    height: 20px;
+}
+
+#send-button{
+    width: 18px;
+    width: 18px;
+}
+
+
+#absender{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+#gmail-adress{
+    font-size: 14px;   
+}
+
+#empfänger{
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+}
+
+#empfänger-textfeld{
+    border: none;
+    outline: none;
+    margin-left: 1px;
+    font-size: 14px;
+    color: black;
+}
+
+#reference{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+#input-reference{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    width: 271px;
+}
+
+#input-reference::placeholder  {
+    color: rgb(101, 101, 101);
+}
+
+.description-text{
+    font-size: 15px;
+    color: rgb(101, 101, 101);
+}
+
+#gmail-tekstfeld{
+    width: 271px;
+    height: 360px;
+    border: none;
+    resize:none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    outline: none;
+    margin-top: 15px;
+}
+
+#gmail-tekstfeld::placeholder{
+    color: rgb(101, 101, 101);
+}
+
+#absender, #empfänger, #reference {
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
 
