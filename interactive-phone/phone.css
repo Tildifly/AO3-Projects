@@ -453,7 +453,7 @@
 #write-gmail{
     background-color: rgb(255, 255, 255);
 
-    /*display: none;*/
+    display: none;
 }
 
 #write-gmail p{
