@@ -346,7 +346,7 @@
                                 alt="google-icon">
                         </div>
                         <div class="search-text">
-                            <p class="search-content">hollander espn cottage online discourse - Goo...</p>
+                            <p class="search-content">hollander espn cottage online discourse...</p>
                             <p class="website-name">www.google.com</p>
                         </div>
                     </div>
@@ -1220,13 +1220,13 @@
                 </div>
                 <div id="inbox">
                     <p id="inbox-description">Inbox</p>
-                    <div class="email">
+                    <div class="email" onclick="activeGmailOne()">
                         <img class="email-profile-pic" src="https://cdn-icons-png.freepik.com/512/8742/8742495.png"
                             alt="profile-pic">
                         <div class="email-overview-text">
                             <p class="sender">Yuna Hollander</p>
                             <p class="about">Gucci Endorsement</p>
-                            <p class="email-text">As discussed, here is an...</p>
+                            <p class="email-text">Shane, as discussed, he...</p>
                         </div>
                         <div class="email-overview-info">
                             <p class="time">22:40</p>
@@ -1235,7 +1235,7 @@
                                 alt="starred">
                         </div>
                     </div>
-                    <div class="email">
+                    <div class="email" onclick="activeGmailTwo()">
                         <img class="email-profile-pic"
                             src="https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png" alt="profile-pic">
                         <div class="email-overview-text">
@@ -1244,23 +1244,23 @@
                             <p class="email-text">Your order has been pro...</p>
                         </div>
                         <div class="email-overview-info">
-                            <p class="time">22:40</p>
+                            <p class="time">15:12</p>
                             <img class="starred"
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyY7wBhsYfUnBDeRFBskxxfwayPmZhBEIW2A&s"
                                 alt="starred">
                         </div>
                     </div>
-                    <div class="email">
+                    <div class="email" onclick="activeGmailThree()">
                         <img class="email-profile-pic"
                             src="https://static.wikia.nocookie.net/game-changers-series/images/f/f9/Montreal_Metros_Logo.png/revision/latest/thumbnail/width/360/height/360?cb=20260102102951"
                             alt="profile-pic">
                         <div class="email-overview-text">
                             <p class="sender">Montreal Metros</p>
-                            <p class="about">Training Schedule April </p>
+                            <p class="about">Training Schedule</p>
                             <p class="email-text">Hi Team, please notice c...</p>
                         </div>
                         <div class="email-overview-info">
-                            <p class="time">22:40</p>
+                            <p class="time">10:33</p>
                             <img class="starred"
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyY7wBhsYfUnBDeRFBskxxfwayPmZhBEIW2A&s"
                                 alt="starred">
@@ -1274,35 +1274,180 @@
                 </div>
             </div>
 
+
             <div class="phonescreen" id="write-gmail">
-                
                 <div id="sending-information">
                     <div id="gmail-buttons">
-                        <img id="back-arrow" onclick="activeGmail()" src="https://images.icon-icons.com/3514/PNG/512/arrow_left_back_icon_221067.png" 
-                        alt="back">
-                        <img id="send-button" onclick="activeGmail(); clearEmailInput()" src="https://cdn-icons-png.flaticon.com/512/876/876777.png" alt="send">
+                        <img id="back-arrow" onclick="activeGmail()"
+                            src="https://images.icon-icons.com/3514/PNG/512/arrow_left_back_icon_221067.png" alt="back">
+                        <img id="send-button" onclick="activeGmail(); clearEmailInput()"
+                            src="https://cdn-icons-png.flaticon.com/512/876/876777.png" alt="send">
                     </div>
-
                     <div id="absender">
-                    <p class="description-text">From</p>
-                    <p id="gmail-adress">shanehollander@gmail.com</p>
+                        <p class="description-text">From</p>
+                        <p id="gmail-adress">shanehollander@gmail.com</p>
                     </div>
-
                     <div id="empfänger">
-                    <p class="description-text">To</p>
-                    <input id="empfänger-textfeld" type="text">
+                        <p class="description-text">To</p>
+                        <input id="empfänger-textfeld" type="text">
                     </div>
-
                     <div id="reference">
-                    <input id="input-reference" type="text" placeholder="Reference" autocomplete="off">
+                        <input id="input-reference" type="text" placeholder="Reference" autocomplete="off">
                     </div>
-
                     <div id="tekstfeld">
                         <textarea id="gmail-tekstfeld" placeholder="Write here..."></textarea>
                     </div>
                 </div>
-                
             </div>
+
+            <div class="phonescreen" id="received-email-1">
+                <img class="back-arrow" onclick="activeGmail()"
+                    src="https://images.icon-icons.com/3514/PNG/512/arrow_left_back_icon_221067.png" alt="back">
+                <div class="email-headline">
+                    <div class="email-headline-text">
+                        <p class="email-title">Gucci Endorsement</p>
+                        <p class="email-subtitle">Inbox</p>
+                    </div>
+                    <img class="starred" src="star-xxl.png" alt="starred">
+                </div>
+                <div class="email-content">
+                    <div class="email-content-sender">
+                        <img class="email-profile-pic-1" src="https://cdn-icons-png.freepik.com/512/8742/8742495.png"
+                            alt="profile-pic">
+                        <div>
+                            <p class="sender-emailadress">yunahollander@gmail.com</p>
+                            <p class="to-me">to me</p>
+                        </div>
+                    </div>
+                    <p class="email-textblock">
+                        Shane,
+                        <br>
+                        <br>
+                        As discussed, here is an overview of the Gucci endorsement offer that came through this morning.
+                        <br>
+                        <br>
+                        They're proposing a full brand partnership: campaign shoots, social content, and select public
+                        appearances. The creative direction is right in line with your aesthetic and the compensation is
+                        nothing to ignore. I've already flagged a few clauses I want to push back on before we sign
+                        anything.
+                        <br>
+                        <br>
+                        let me know your thoughts. I'd like to respond to them by the end of the week.
+                        <br>
+                        <br>
+                        Also, dinner Sunday is still at 7.
+                        <br>
+                        <br>
+                        Love,
+                        <br>
+                        Mom
+                    </p>
+                </div>
+            </div>
+
+            <div class="phonescreen" id="received-email-2">
+                <img class="back-arrow" onclick="activeGmail()"
+                    src="https://images.icon-icons.com/3514/PNG/512/arrow_left_back_icon_221067.png" alt="back">
+                <div class="email-headline">
+                    <div class="email-headline-text">
+                        <p class="email-title">Order Confirmation</p>
+                        <p class="email-subtitle">Inbox</p>
+                    </div>
+                    <img class="starred" src="star-xxl.png" alt="starred">
+                </div>
+                <div class="email-content" id="content-overflow">
+                    <div class="email-content-sender">
+                        <img class="email-profile-pic-1" src="https://upload.wikimedia.org/wikipedia/commons/d/de/Amazon_icon.png"
+                            alt="profile-pic">
+                        <div>
+                            <p class="sender-emailadress">Amazon.de</p>
+                            <p class="to-me">to me</p>
+                        </div>
+                    </div>
+                    <p class="email-textblock">
+                        Your order has been processed and is on its way.
+                        <br><br><br>
+                        Hello Shane,
+                        <br><br>
+                        Thank you for your purchase! Here's a summary of your order:
+                        <br><br>
+                        Order #112-4837291-0056743<br>
+                        Placed on: March 19, 2026
+                        <br><br>
+                        1x Theragun Mini Percussive Therapy Device — $199.00<br>
+                        1x Bulletproof Collagen Protein Powder (Vanilla, 17.6oz) — $44.99<br>
+                        1x Laneige Lip Sleeping Mask (Berry, 20g) — $24.00
+                        <br><br><br>
+                        Subtotal: $267.99<br>
+                        Shipping: FREE (Prime)<br>
+                        Total: $267.99
+                        <br><br>
+                        Estimated Delivery: April 21–22, 2017<br>
+                        Shipping to: 14 Rue des Érables, Montréal, QC
+                        <br><br>
+                        <br>
+                        Thanks for being a Prime member.<br>
+                        — Amazon.com
+                    </p>
+                </div>
+            </div>
+
+        
+
+
+
+            <div class="phonescreen" id="received-email-3">
+                <img class="back-arrow" onclick="activeGmail()"
+                    src="https://images.icon-icons.com/3514/PNG/512/arrow_left_back_icon_221067.png" alt="back">
+                <div class="email-headline">
+                    <div class="email-headline-text">
+                        <p class="email-title">Training Schedule</p>
+                        <p class="email-subtitle">Inbox</p>
+                    </div>
+                    <img class="starred" src="star-xxl.png" alt="starred">
+                </div>
+                <div class="email-content" id="content-overflow">
+                    <div class="email-content-sender">
+                        <img class="email-profile-pic-1" src="https://static.wikia.nocookie.net/game-changers-series/images/f/f9/Montreal_Metros_Logo.png/revision/latest/thumbnail/width/360/height/360?cb=20260102102951"
+                            alt="profile-pic">
+                        <div>
+                            <p class="sender-emailadress">management@mmetros.nhl.com</p>
+                            <p class="to-me">to me</p>
+                        </div>
+                    </div>
+                    <p class="email-textblock">
+                        Hi Team, please notice changes to the April training schedule below. Make sure to review
+                        carefully as several sessions have been moved.
+                        <br><br>
+                        APRIL 2017 - TRAINING SCHEDULE
+                        <br><br>
+                        Mon April 3: Ice session 7:00–9:00AM, Gym 11:00AM–1:00PM<br>
+                        Tue April 4: Rest<br>
+                        Wed April 5: Ice session 6:30–8:30AM, Video review 10:00AM<br>
+                        Thu April 6: Gym 9:00–11:00AM, Ice session 2:00–4:00PM<br>
+                        Fri April 7: Ice session 7:00–9:00AM<br>
+                        Sat April 8: GAME DAY vs. Boston Raiders, 7:00PM (Bell Centre)<br>
+                        Sun April 9: Recovery & optional skate 10:00AM
+                        <br><br>
+                        Mon April 10: Ice session 7:00–9:00AM, Gym 11:00AM–1:00PM<br>
+                        Tue April 11: Media availability 9:00AM, Ice session 11:30AM–1:30PM<br>
+                        Wed April 12: Travel day (bus departs 8:00AM sharp)<br>
+                        Thu April 13: Away ice session 8:00AM, walkthrough 3:00PM<br>
+                        Fri April 14: GAME DAY vs. New York, 8:00PM<br>
+                        Sat April 15: Travel back, arrival ~2:00PM<br>
+                        Sun April 16: Rest
+                        <br><br>
+                        Please make sure you are on time. Repeated late arrivals will be noted.
+                        <br><br>
+                        Any conflicts or questions, reach out directly.
+                        <br><br>
+                        - Montreal Metros Hockey Operations<br>
+                        management@mmetros.nhl.com
+                    </p>
+                </div>
+            </div>
+
+
 
 
 
